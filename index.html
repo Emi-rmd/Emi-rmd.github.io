@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Invitacion formal</title>
+    
+    <!-- icono del navegador -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.16\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.16\favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- letra importada montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+    <!-- archivo CSS -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header class="titulo-principal">
+        <h1>
+            Feliz día de la primavera :)
+        </h1>
+    </header>
+    <section>
+        <p class="texto-comienzo">
+            Como el año pasado te regale flores, este año decidí innovar bueeee
+            <br>
+            Capaz esto de los códigos y las compus no es lo tuyo, pero me pareció original, mi idea es que siempre te sientas especial, porque
+            <br>
+            yo me siento especial con vos, te amo <3
+            <br>
+            <br>
+            A continuación... tus flores amarillas eeeeaaaa :)
+        </p>
+            <p class="texto-importante">
+                (Activa el sonido y subi el volumen, es mucho muy importante)
+            </p>
+            
+             <!-- archivo de música -->
+                 <article class="botonera">
+                     <!-- Elemento de audio -->
+                        <audio id="cancion" src="Floricienta - Flores Amarillas (Official Video).mp3" preload="auto"></audio>
+            
+                    <!-- Botones para controlar la música -->
+                        <button class="botoncitos" onclick="playMusic()">Reproducime ;)</button>
+                        <button class="botoncitos" onclick="pauseMusic()">Por si me queres pausar :(</button>
+            
+                    <!-- JavaScript para controlar la reproducción -->
+                        <script>
+                            const audio = document.getElementById('cancion');
+            
+                            function playMusic() {
+                                audio.play();
+                            }
+            
+                            function pauseMusic() {
+                                audio.pause();
+                            }
+                        </script>      
+                 </article>
+            
+                 <article class="textito">
+                    <p>
+                        baja baja, al final esta lo importante :)
+                    </p>
+                 </article>
+            <!-- archivo video de flores -->
+                <article>
+                   <video class="videito" width="1920" height="1080" autoplay loop muted
+                   <source src="video-flores.mp4" type="video/mp4">
+                </article>
+            
+    </section>
+</body>
+<footer class="pie">
+    <p>
+        ¿Vamos a tomar mates con medialunas :)?
+    </p>
+</footer>
+</html>
